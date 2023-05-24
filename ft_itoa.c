@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lgomes-n < lgomes-n@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: lgomes-n <lgomes-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 11:43:16 by lgomes-n          #+#    #+#             */
-/*   Updated: 2023/05/12 18:13:55 by lgomes-n         ###   ########.fr       */
+/*   Updated: 2023/05/23 12:11:12 by lgomes-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count_digits(long int n)
+static int	ft_count_digits(long int n)
 {
 	int	count;
 
@@ -32,7 +32,7 @@ static int	count_digits(long int n)
 	return (count);
 }
 
-static void	store_digits(char *str, long int n, int digits)
+static void	ft_store_digits(char *str, long int n, int digits)
 {
 	int	i;
 
@@ -60,11 +60,11 @@ char	*ft_itoa(int n)
 	int		digits;
 	char	*str;
 
-	digits = count_digits(n);
+	digits = ft_count_digits(n);
 	str = (char *)malloc((digits + 1) * sizeof(char));
 	if (str == NULL)
 		return (NULL);
-	store_digits(str, n, digits);
+	ft_store_digits(str, n, digits);
 	str[digits] = '\0';
 	return (str);
 }

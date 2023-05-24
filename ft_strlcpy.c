@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lgomes-n < lgomes-n@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: lgomes-n <lgomes-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 16:53:06 by lgomes-n          #+#    #+#             */
-/*   Updated: 2023/05/12 11:01:33 by lgomes-n         ###   ########.fr       */
+/*   Updated: 2023/05/23 12:16:13 by lgomes-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	}
 	return (src_len);
 }
-
-// int main() {
-//     char dest[20] = "Hello, ";
-//     const char src[] = "world!";
-
-//     size_t result = ft_strlcpy(dest, src, sizeof(dest));
-
-//     printf("String concatenada: %s\n", dest);
-//     printf("Tamanho total: %zu\n", result);
-
-//     return 0;
-// }

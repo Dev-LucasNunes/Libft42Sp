@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lgomes-n < lgomes-n@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: lgomes-n <lgomes-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 20:59:47 by lgomes-n          #+#    #+#             */
-/*   Updated: 2023/05/08 11:04:52 by lgomes-n         ###   ########.fr       */
+/*   Updated: 2023/05/23 12:11:33 by lgomes-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
-// int main() {
-//     char str[20] = "Hello, World!";
-// 	char c = 'a';  
-//     printf("Antes: %s\n", str);  
-//     ft_memset(str, c, sizeof(str));  
-//     printf("Depois: %s\n", str);  
-//     return 0;
-// }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lgomes-n < lgomes-n@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: lgomes-n <lgomes-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 07:53:53 by lgomes-n          #+#    #+#             */
-/*   Updated: 2023/05/08 11:20:01 by lgomes-n         ###   ########.fr       */
+/*   Updated: 2023/05/23 12:13:00 by lgomes-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main (void)
-// {
-// 	int teste;
-
-// 	teste = ft_strncmp("test\200", "test\0", 6);
-// 	printf("%d", teste);
-// }

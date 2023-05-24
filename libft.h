@@ -6,15 +6,13 @@
 /*   By: lgomes-n < lgomes-n@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/05 11:11:45 by lgomes-n          #+#    #+#             */
-/*   Updated: 2023/05/16 09:49:23 by lgomes-n         ###   ########.fr       */
+/*   Updated: 2023/05/24 09:23:48 by lgomes-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <unistd.h>
-# include <string.h>
-# include <stdio.h>
 # include <stdlib.h> 
 
 void	ft_putchar_fd(char c, int fd);
@@ -50,5 +48,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
 
 #endif
