@@ -6,7 +6,7 @@
 /*   By: lgomes-n < lgomes-n@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 17:34:16 by lgomes-n          #+#    #+#             */
-/*   Updated: 2023/05/24 08:28:17 by lgomes-n         ###   ########.fr       */
+/*   Updated: 2023/05/29 08:26:34 by lgomes-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,19 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	unsigned char		*str;
-	size_t				i;
+	unsigned char	*str;
+	size_t			i;
+	size_t			total;
 
 	str = NULL;
-	if ((size * nmemb) / size != nmemb)
+	total = size * nmemb;
+	if (total != 0 && total / size != nmemb)
 		return (NULL);
-	if (nmemb * size == 0)
-		return (malloc(0));
-	str = (unsigned char *)malloc(nmemb * size * sizeof(unsigned char));
-	if (!str)
-	{
+	str = (unsigned char *)malloc(total * sizeof(unsigned char));
+	if (str == NULL)
 		return (NULL);
-	}	
 	i = 0;
-	while (i < (nmemb * size))
+	while (i < (total))
 	{
 		str[i] = '\0';
 		i++;

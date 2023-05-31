@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lgomes-n <lgomes-n@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: lgomes-n < lgomes-n@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 11:43:16 by lgomes-n          #+#    #+#             */
-/*   Updated: 2023/05/23 12:11:12 by lgomes-n         ###   ########.fr       */
+/*   Updated: 2023/05/26 15:37:15 by lgomes-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	ft_count_digits(long int n)
 	while (n != 0)
 	{
 		count++;
-		n /= 10;
+		n = n / 10;
 	}
 	return (count);
 }
@@ -50,7 +50,7 @@ static void	ft_store_digits(char *str, long int n, int digits)
 	while (n != 0)
 	{
 		str[i] = '0' + (n % 10);
-		n /= 10;
+		n = n / 10;
 		i--;
 	}
 }

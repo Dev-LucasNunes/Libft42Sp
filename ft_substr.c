@@ -6,7 +6,7 @@
 /*   By: lgomes-n < lgomes-n@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 18:01:20 by lgomes-n          #+#    #+#             */
-/*   Updated: 2023/05/24 10:15:47 by lgomes-n         ###   ########.fr       */
+/*   Updated: 2023/05/30 15:14:24 by lgomes-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	s_len = ft_strlen(s);
 	size = s_len - start;
 	i = 0;
-	if (s == NULL || start >= s_len)
+	if (start >= s_len)
 		return (ft_strdup(""));
 	if (size < len)
 		len = size;
