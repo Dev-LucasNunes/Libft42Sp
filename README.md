@@ -16,6 +16,6 @@ The Libft42Sp library includes several categories of functions:
 # **Contact**
 If you have any questions, suggestions, or concerns, please open an issue in this repository or contact me directly.
 
-Name: Lucas Nunes
-Email: dev.lucasnunes@gmail.com
+Name: Lucas Nunes  
+Email: dev.lucasnunes@gmail.com  
 GitHub: Dev-LucasNunes
